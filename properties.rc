@@ -1,0 +1,39 @@
+#include <windows.h>
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+VS_VERSION_INFO    VERSIONINFO
+        FILEVERSION      1,0,0,0
+PRODUCTVERSION   1,0,0,0
+FILEFLAGSMASK    VS_FFI_FILEFLAGSMASK
+#ifdef _DEBUG
+FILEFLAGS        VS_FF_DEBUG|VS_FF_PRIVATEBUILD|VS_FF_PRERELEASE
+#else
+FILEFLAGS        0x0L  // final version
+#endif
+FILEOS           VOS_NT_WINDOWS32
+FILETYPE         VFT_APP
+FILESUBTYPE      VFT2_UNKNOWN // not used
+{
+BLOCK "StringFileInfo"
+{
+BLOCK "040904E4" // Lang=US English, CharSet=Windows Multilingual
+{
+VALUE "Build",            "2017\0"
+VALUE "Comments",         "Monitor Software bizibox\0"
+VALUE "Developer",        "Ido Aizenshtein\0"
+VALUE "FileDescription",  "Monitor Software By bizibox\0"
+VALUE "FileVersion",      "1.0.0.0\0"
+VALUE "InternalName",     "biziboxMonitor\0"
+VALUE "LegalCopyright",   "GPLv3 (C) 2017 Ifact\0"
+VALUE "OriginalFilename", "biziboxMonitor.exe\0"
+VALUE "ProductName",      "biziboxMonitor\0"
+VALUE "ProductVersion",   "1.0.0.0\0"
+} // BLOCK "040904E4"
+} // BLOCK "StringFileInfo"
+BLOCK "VarFileInfo"
+{
+VALUE "Translation", 0x409, 1252 // 1252 = 0x04E4
+} // BLOCK "VarFileInfo"
+}
+desk ICON "favicon.ico"
